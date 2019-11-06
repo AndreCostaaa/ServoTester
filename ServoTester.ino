@@ -8,7 +8,7 @@
 #define D2 3
 #define D3 2
 #define ServoPin 9
-#define MILLIS 10
+
 Servo servo;
 
 enum Mode {MANUAL, NEUTRAL, AUTO};
@@ -18,7 +18,7 @@ const byte SERVO_STOP = 90;
 Mode eMode;
 byte bMode = 1;
 int iPot;
-byte bS1;
+byte bS1 = INACTIF;
 byte bServoPos;
 
 bool boL1 = false;
@@ -37,6 +37,7 @@ void setup() {
   pinMode(D1, OUTPUT);
   pinMode(D2, OUTPUT);
   pinMode(D3, OUTPUT);
+
 }
 
 void loop() {
