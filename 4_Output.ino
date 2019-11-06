@@ -14,7 +14,8 @@ void ServoMotor()
     //En mode auto le traitement de la variable bServoPos a été fait avant (voir fonction TreatementMode case 3)
     //Vu que la variable utilisé est la même j'ai regroupé les deux cases
     case AUTO: 
-    case NEUTRAL: servo.write(bServoPos);  
+    case NEUTRAL: servo.write(bServoPos); 
+    delay(5);
       break;
 
     //Variable iPot vaudra entre 0 et 180 et va dependre de la position du potentiometre (voir fonction UserInput et TreatementPot)
