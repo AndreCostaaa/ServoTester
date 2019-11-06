@@ -37,16 +37,13 @@ void setup() {
   pinMode(D1, OUTPUT);
   pinMode(D2, OUTPUT);
   pinMode(D3, OUTPUT);
-  Serial.begin(9600);
 }
 
 void loop() {
   UserInput();
   TreatementSwitch();
-
   TreatementPot();
   TreatementMode();
-
   ServoMotor();
   Leds();
 }
